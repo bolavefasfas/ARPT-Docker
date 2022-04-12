@@ -9,8 +9,6 @@ ENV Telegram_user_id=5028789339
 ENV Upload=/upload
 ENV Rclone_share=False
 ENV Error_user_info="Wrong user"
-EXPOSE 8868/tcp
-EXPOSE 8868/udp
 EXPOSE 8868
 RUN rclone mount onedrive: /onedrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --vfs-cache-mode full
 CMD ["bash","start.sh"]
