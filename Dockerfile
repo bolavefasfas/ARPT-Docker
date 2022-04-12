@@ -12,7 +12,5 @@ ENV Error_user_info="Wrong user"
 EXPOSE 8868/tcp
 EXPOSE 8868/udp
 EXPOSE 8868
-ADD /rclone.conf /.config/rclone/rclone.conf
-ADD /rclone.conf /root/.config/rclone/rclone.conf
 RUN rclone mount onedrive: /onedrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --vfs-cache-mode full
 CMD ["bash","start.sh"]
