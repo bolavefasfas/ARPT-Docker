@@ -1,4 +1,4 @@
-FROM benchao/arpt:v2.0.8
+FROM dibssbd/aprp:v1
 RUN sudo mkdir /onedrive
 RUN sudo mkdir /upload
 ENV Api_hash=655e892751199296414dbd56492cffe9
